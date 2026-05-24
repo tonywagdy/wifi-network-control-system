@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  netcontrol-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netcontrol_app
+    ports:
+      - "3000:3000"
+      - "1053:1053/udp" # Async DNS custom server port
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped

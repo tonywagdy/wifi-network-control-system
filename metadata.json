@@ -1,0 +1,6 @@
+{
+  "name": "WiFi Network Control System",
+  "description": "A professional-grade live network dashboard, device control, and bandwidth monitoring console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
